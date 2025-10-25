@@ -6,12 +6,15 @@ class Program
     {
         Console.WriteLine("Hello PRAnalyzer!");
 
-        int unusedVariable; // triggers CS0168: variable declared but never used
+        int unusedVariable; // triggers CS0168 warning
 
         Utils utils = new Utils();
         utils.DoSomething();
 
         Database db = new Database();
         db.GetUser("admin");
+
+        Logging logger = new Logging();
+        logger.Log(null); // triggers nullability warning
     }
 }
