@@ -1,0 +1,34 @@
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio files
+*.user
+*.suo
+*.vscode/
+.vs/
+
+# Rider IDE files
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.cache
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
