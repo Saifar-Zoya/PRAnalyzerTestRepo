@@ -1,9 +1,13 @@
-﻿public class Utils
+﻿// ========================================
+// FILE 1: Utils.cs
+// Tests: CS, IDE, SA
+// ========================================
+public class Utils
 {
     // Existing method
     public void DoSomething()
     {
-        int x; // unused variable warning
+        int x; // unused variable → CS0168 or IDE0059
     }
 
     // Unused private method
@@ -27,6 +31,10 @@
     {
         int y; // unused variable
     }
+}
 
-    // Method with empty catch block (code quality warning)
+// StyleCop example: naming rule (should trigger SA1300 / SA1310)
+public class stylecopClass
+{
+    public int my_field = 5; // Should be PascalCase or private → SA1300/SA1307
 }
